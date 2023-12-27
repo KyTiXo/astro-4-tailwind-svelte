@@ -17,7 +17,7 @@
 
 <style lang="postcss">
   #postcss-svelte-check {
-    @apply text-emerald-300;
+    @apply text-emerald-300 sm:text-emerald-400 lg:text-emerald-900;
     display: block;
   }
 </style>
