@@ -1,5 +1,5 @@
 <script>
-  let name = "Kyle";
+  let name = "John Doe";
 </script>
 
 <!-- #svelte-test -->
