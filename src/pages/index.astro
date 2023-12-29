@@ -1,24 +1,25 @@
 ---
-import TestCard from "@components/TestCard.svelte";
-import Layout from "~/layouts/Layout.astro";
+import Layout from '@layouts/Layout.astro';
+import TestCard from '@components/TestCard.svelte';
 ---
 
 <Layout title="Welcome to Astro.">
-  <main class="sm:bg-slate-500 md:bg-slate-800">
-    <div class="text-2xl text-white sm:text-green-200 lg:text-green-500">
-      <h2>Hello World</h2>
-      <TestCard />
-    </div>
-  </main>
+	<main class="sm:bg-slate-500 md:bg-slate-800">
+		<div class="text-2xl text-white sm:text-green-200 lg:text-green-500">
+			<h2>Hello World</h2>
+
+			{true && <TestCard />}
+		</div>
+	</main>
 </Layout>
 
 <style>
-  main {
-    margin: auto;
-    padding: 1rem;
-    width: 800px;
-    max-width: calc(100% - 2rem);
-  }
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+	}
 </style>
 
 <style lang="postcss">

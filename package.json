@@ -7,7 +7,10 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "format": "pnpm run format:code",
+    "format:ci": "pnpm run format:code",
+    "format:code": "prettier -w \"**/*\" --ignore-unknown --cache"
   },
   "browserslist": [
     "> 0.5%",
@@ -15,6 +18,10 @@
     "Firefox ESR",
     "not dead"
   ],
+  "engines": {
+    "node": ">=20.5.0",
+    "pnpm": ">=8.6.12"
+  },
   "dependencies": {
     "@astrojs/check": "^0.3.4",
     "@astrojs/svelte": "^5.0.2",
@@ -25,10 +32,11 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
+    "@types/node": "^20.10.5",
     "autoprefixer": "^10.4.16",
     "prettier": "^3.1.1",
     "prettier-plugin-astro": "^0.12.3",
-    "prettier-plugin-astro-organize-imports": "^0.3.3",
     "prettier-plugin-svelte": "^3.1.2",
     "prettier-plugin-tailwindcss": "0.0.0-insiders.9f8780c"
   }

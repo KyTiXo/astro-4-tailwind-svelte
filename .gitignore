@@ -7,15 +7,20 @@ dist/
 # dependencies
 node_modules/
 
-# logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+*.log
+package-lock.json
+.turbo/
+.eslintcache
+.pnpm-store
 
-# environment variables
-.env
-.env.production
+# ignore top-level vscode settings
+/.vscode/settings.json
+
+# do not commit .env files or any files that end with `.env`
+*.env
 
 # macOS-specific files
 .DS_Store
+
+# exclude IntelliJ/WebStorm stuff
+.idea

@@ -1,12 +1,15 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
+    "module": "esnext",
     "baseUrl": ".",
     "paths": {
       "~/*": ["src/*"],
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
-      "@assets/*": ["src/assets/*"]
+      "@lib/*": ["src/lib/*"],
+      "@content/*": ["src/content/*"],
+      "@config/*": ["src/config/*"]
     }
   },
   // To maybe avoid https://github.com/sveltejs/language-tools/issues/2171
